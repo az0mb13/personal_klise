@@ -6,6 +6,10 @@
   url: https://blog.dixitaditya.com/
   external: true
 
+- title: twitter
+  url: https://twitter.com/zombie007o
+  external: true
+
 - title: linkedin
   url: https://www.linkedin.com/in/ad17ya
   external: true # set true if you using external link, see below
