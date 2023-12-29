@@ -27,11 +27,19 @@ home: true
 </ol>
 <hr>
 <h2 aria-label="Recent Posts">Recent Posts</h3>
-  {%- for post in site.posts limit: site.number_of_posts -%}
+  <!-- {%- for post in site.posts limit: site.number_of_posts -%} -->
+  <article class="post-item">
+    <span class="post-item-date">Dec 3, 2022</span>
+    <h4 class="post-item-title">
+      <a href="https://blog.dixitaditya.com/manipulating-aes-traffic-using-a-chain-of-proxies-and-hardcoded-keys">Manipulating
+        AES Traffic using a Chain of Proxies and Hardcoded Keys
+      </a>
+    </h4>
+  </article>
+  <!-- {%- endfor -%} -->
   <article class="post-item">
     <span class="post-item-date">{{ post.date | date: "%b %d, %Y" }}</span>
     <h4 class="post-item-title">
       <a href="{{ post.url }}">{{ post.title | escape }}</a>
     </h4>
   </article>
-  {%- endfor -%}
