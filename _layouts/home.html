@@ -15,19 +15,23 @@ home: true
 <h2 aria-label="Work Experience">Work Experience</h2>
 
 <ol>
-  <li><b>Credshields</b> <span style="color: #ff2957;">[Research Lead]</span> -- Web3 Security, Code Reviews, Smart Contract Audits and Research</li>
-  <li><b>Cobalt Labs</b> <span style="color: #ff2957;">[Team Lead]</span> -- Pentests in various domains and scope, Team and Client Management, Executive Reports</li>
-  <l1><b>HackerOne</b> <span style="color: #ff2957;">[Team Lead]</span> -- Same as above</l1>
-  <l1><b>Binary.com</b> <span style="color: #ff2957;">[Security Researcher]</span> -- Security and Automation, Code Reviews, Application, Cloud, and Infra Security</l1>
-  <li><b>Bitaces Labs</b> <span style="color: #ff2957;">[Cybersecurity Consultant]</span> -- Web2 Pentests and Security Audits</li>
+  <li><b>Credshields</b> <span style="color: #ff2957;">[Research Lead]</span> -- Web3 Security, Code Reviews, Smart
+    Contract Audits and Research</li>
+  <li><b>Cobalt Labs</b> <span style="color: #ff2957;">[Team Lead]</span> -- Pentests in various domains and scope, Team
+    and Client Management, Executive Reports.</li>
+  <l1><b>HackerOne</b> <span style="color: #ff2957;">[Team Lead]</span> -- Same as above</li>
+    <l1><b>Binary.com</b> <span style="color: #ff2957;">[Security Researcher]</span> -- Security and Automation, Code
+      Reviews, Application, Cloud, and Infra Security</l1>
+    <li><b>Bitaces Labs</b> <span style="color: #ff2957;">[Cybersecurity Consultant]</span> -- Web2 Pentests and
+      Security Audits</li>
 </ol>
 
 <h2 aria-label="Recent Posts">Recent Posts</h3>
-{%- for post in site.posts limit: site.number_of_posts -%}
-<article class="post-item">
-  <span class="post-item-date">{{ post.date | date: "%b %d, %Y" }}</span>
-  <h4 class="post-item-title">
-    <a href="{{ post.url }}">{{ post.title | escape }}</a>
-  </h4>
-</article>
-{%- endfor -%}
+  {%- for post in site.posts limit: site.number_of_posts -%}
+  <article class="post-item">
+    <span class="post-item-date">{{ post.date | date: "%b %d, %Y" }}</span>
+    <h4 class="post-item-title">
+      <a href="{{ post.url }}">{{ post.title | escape }}</a>
+    </h4>
+  </article>
+  {%- endfor -%}
